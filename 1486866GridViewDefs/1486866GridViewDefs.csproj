@@ -49,16 +49,21 @@
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R3 2020\Bin40\Telerik.WinControls.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Telerik.WinControls.GridView, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Telerik.WinControls.UI, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R3 2020\Bin40\Telerik.WinControls.UI.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="TelerikCommon, Version=2020.3.915.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\..\..\Program Files (x86)\Progress\Telerik UI for WinForms R3 2020\Bin40\TelerikCommon.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
