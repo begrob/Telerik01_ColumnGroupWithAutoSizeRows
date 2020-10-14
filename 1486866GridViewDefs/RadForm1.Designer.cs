@@ -69,6 +69,7 @@
             this.radGridView1.Name = "radGridView1";
             this.radGridView1.Size = new System.Drawing.Size(1100, 490);
             this.radGridView1.TabIndex = 0;
+            this.radGridView1.CellFormatting += new Telerik.WinControls.UI.CellFormattingEventHandler(this.radGridView1_CellFormatting);
             // 
             // radButton2
             // 

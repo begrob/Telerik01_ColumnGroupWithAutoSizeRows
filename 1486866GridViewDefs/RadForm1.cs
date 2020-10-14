@@ -145,5 +145,18 @@ namespace _1486866GridViewDefs
             radGridView1.ViewDefinition = _originalView;
             this.radGridView1.AutoSizeRows = false;
         }
+
+        private void radGridView1_CellFormatting(object sender, CellFormattingEventArgs e)
+        {
+            if (this.radGridView1.ViewDefinition.GetType() == typeof(TableViewDefinition))
+            {
+                string text = e.CellElement.Text;
+                var firstNewLine = text.IndexOf(Environment.NewLine);
+                if (firstNewLine >= 0)
+                {
+                    e.CellElement.Text = text.Remove(firstNewLine);
+                }
+            }
+        }
     }
 }
