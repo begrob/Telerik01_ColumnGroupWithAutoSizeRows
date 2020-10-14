@@ -31,7 +31,7 @@ namespace _1486866GridViewDefs
 
             foreach (GridViewColumn col in this.radGridView1.Columns)
             {
-                col.WrapText = true;
+                col.WrapText = false;
             }
              
             //ColumnGroupsViewDefinition view = new ColumnGroupsViewDefinition();
@@ -56,7 +56,7 @@ namespace _1486866GridViewDefs
             //this.radGridView1.Columns["CustomerID"].HeaderText = "";
             //this.radGridView1.Columns["CustomerID"].HeaderImage = Properties.Resources.Alarm2;
 
-            this.radGridView1.AutoSizeRows = true;
+            this.radGridView1.AutoSizeRows = false;
             _originalView = this.radGridView1.ViewDefinition;
         }
 
@@ -75,6 +75,7 @@ namespace _1486866GridViewDefs
             view.RowTemplate.Rows[0].Cells[3].RowSpan = 2;
             view.RowTemplate.Rows[0].Height = 40;
             radGridView1.ViewDefinition = view;
+            this.radGridView1.AutoSizeRows = true;
         }
 
         private void radButton2_Click(object sender, EventArgs e)
@@ -94,6 +95,7 @@ namespace _1486866GridViewDefs
             view.RowTemplate.Rows[0].Cells[3].RowSpan = 2;
             view.RowTemplate.Rows[0].Height = 40;
             radGridView1.ViewDefinition = view;
+            this.radGridView1.AutoSizeRows = true;
         }
 
         private void radButton3_Click(object sender, EventArgs e)
@@ -116,6 +118,7 @@ namespace _1486866GridViewDefs
             view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Phone");
             view.ColumnGroups[1].Groups[1].Rows[0].ColumnNames.Add("Fax");
             radGridView1.ViewDefinition = view;
+            this.radGridView1.AutoSizeRows = true;
         }
 
         private void radButton4_Click(object sender, EventArgs e)
@@ -134,11 +137,13 @@ namespace _1486866GridViewDefs
             view.ColumnGroups[0].Rows.Add(new GridViewColumnGroupRow());
             view.ColumnGroups[0].Rows[1].ColumnNames.Add("CompanyName");
             radGridView1.ViewDefinition = view;
+            this.radGridView1.AutoSizeRows = true;
         }
 
         private void radButton5_Click(object sender, EventArgs e)
         {
             radGridView1.ViewDefinition = _originalView;
+            this.radGridView1.AutoSizeRows = false;
         }
     }
 }
