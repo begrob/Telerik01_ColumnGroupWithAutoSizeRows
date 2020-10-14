@@ -121,8 +121,8 @@ namespace _1486866GridViewDefs
         private void radButton4_Click(object sender, EventArgs e)
         {
             ColumnGroupsViewDefinition view = new ColumnGroupsViewDefinition();
-            view.ColumnGroups.Add(new GridViewColumnGroup("Group Header"));
-            view.ColumnGroups[0].ShowHeader = false;
+            view.ColumnGroups.Add(new GridViewColumnGroup(""));
+            //view.ColumnGroups[0].ShowHeader = false;
             view.ColumnGroups[0].Rows.Add(new GridViewColumnGroupRow());
             view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactName");
             view.ColumnGroups[0].Rows[0].ColumnNames.Add("ContactTitle");
